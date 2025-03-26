@@ -6,13 +6,13 @@ const port = 3000;
 app.use(express.static('public'));
 
 app.get('/', (req, res) => {
-    console.log('Siamo nella rotta Principale');
+    // console.log('Siamo nella rotta Principale');
     res.send('Server del mio blog');
 });
 
 
 app.get('/bacheca', (req, res) => {
-    console.log('Siamo nella rotta Bacheca');
+    // console.log('Siamo nella rotta Bacheca');
     res.json(post);
 });
 
